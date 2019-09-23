@@ -1,0 +1,15 @@
+.neoTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.neoTable td {
+  border: 1px solid #ccc;
+  padding: 3px;
+}
+
+.dangerous {
+  background: #CC0000;
+  color: #fff;
+  font-weight: bold;
+}

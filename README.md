@@ -1,4 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Neo Feed
+
+# Task Description
+
+## Requirements
+
+-	use React, Redux, webpack
+- use best practices to structure the application, consider that it will be extended with additional features in the future
+-	provide means for configuration for different environments (DEV/PROD)
+-	cover partially with unit tests (in order to demonstrate the approaches, if have experience)
+-	use api.nasa.gov
+-	the API-KEY is SPboJP8XCDF9nlUzSqcqzh0Mq9sJuy6Hf27FuTFl (if expired - please register)
+-	documentation:  https://api.nasa.gov/api.html#NeoWS
+
+
+## Task:
+
+Create a single page React application with information about near orbital objects (NEO), organized in list with a maximum of 6 elements. New element should be added every 5 seconds and contain aggregated data about a single day. The oldest element should be removed on new element if list is full. You should start fetching data from 1st day of the month till today. When reach today, start from the 1st day again.
+
+Every element should contain the following data:
+
+-	max estimated diameter of NEO in kilometers for the day (check estimated_diameter_max property)
+-	number of potentially hazardous NEOs per day (check is_potentially_hazardous_asteroid property)
+-	closest NEO (miss_distance in km)
+-	fastest NEO (relative_velocity in kph)
+
+Elements with the 2 highest numbers of hazard objects should have red background and updated with each new element added.
+
+## Contains
+
+- [x] [Typescript](https://www.typescriptlang.org/) 3.6.3
+- [x] [React](https://facebook.github.io/react/) 16.9.2
+- [x] [RxJS](http://reactivex.io/rxjs/) 6.5.3
 
 ## Available Scripts
 
@@ -20,25 +52,4 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
