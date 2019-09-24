@@ -1,5 +1,4 @@
 import React, {Fragment} from 'react';
-import style from './Neo.css';
 
 const danger = {background: 'red', color: '#fff'};
 

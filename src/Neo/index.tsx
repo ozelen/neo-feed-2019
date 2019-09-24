@@ -5,7 +5,6 @@ import styles from './Neo.css';
 
 const Neo = () => {
   const { display } = useNeoEffects();
-  console.log('STYLE', styles.neoTable);
   return (
     <Fragment>
       <h1>
