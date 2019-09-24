@@ -4,7 +4,7 @@
 
 ## Requirements
 
--	use React, Redux, webpack
+-	use React with Hooks, TypeScript
 - use best practices to structure the application, consider that it will be extended with additional features in the future
 -	provide means for configuration for different environments (DEV/PROD)
 -	cover partially with unit tests (in order to demonstrate the approaches, if have experience)
